@@ -1,0 +1,1301 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 1000px;
+    font-family: sans-serif;
+}
+
+.navbar {
+    width: 100%;
+    height: 60px;
+    background-color: #00163B;
+    position: fixed;
+    opacity: 0.8;
+    z-index: 50;
+}
+
+.navbar_leftside {
+    width: 40%;
+    height: 100%;
+    float: left;
+}
+
+.navbar_img {
+    width: 20%;
+    height: 80%;
+    margin-top: 5px;
+    margin-left: 4%;
+    margin-right: 2%;
+    float: left;
+    background-image: url(../images/logo2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 25px
+}
+
+.navbar_img:hover {
+    background-color: #ffffff4f;
+}
+
+.navbar_search {
+    width: 40px;
+    height: 50px;
+    padding: 4px;
+    margin-top: 2%;
+    float: left;
+    position: relative;
+    transition: 0.8s;
+}
+
+.search-input {
+    padding: 5px 5px 5px 35px;
+    height: 30px;
+    width: 100%;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+
+.icon_search {
+    position: absolute;
+    left: 10px;
+    top: 40%;
+    transform: translate(-10%, -50%);
+    color: #00163B;
+}
+
+.navbar_search:hover,
+.search-input:focus {
+    width: 350px;
+}
+
+/* the list of the navbar pages................................. */
+.navbar-rightside {
+    float: left;
+    width: 60%;
+    height: 100%;
+}
+
+.navbar-rightside li {
+    display: inline-block;
+    left: 5%;
+    margin-left: 20px;
+    margin-top: 20px;
+    position: relative;
+    text-transform: capitalize;
+}
+
+.navbar-rightside li a {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar-rightside li a:hover {
+    color: white;
+    font-size: 16px;
+}
+
+.navbar_line {
+    width: 0;
+    height: 5px;
+    background-color: #1F4B78;
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+
+.navbar-rightside li:hover .navbar_line {
+    position: absolute;
+    width: 100%;
+    transition: 0.5s;
+}
+
+.navbar-dropdown .fa-solid {
+    margin-left: 3px;
+}
+
+.navbar-submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #05060A;
+    width: 160px;
+    height: 220px;
+    z-index: 10;
+    border-radius: 8px;
+    padding: 5px;
+    margin-top: 10%;
+}
+
+.navbar-submenu li {
+    margin-top: 10%;
+    position: relative;
+    transform: translate(-15%, 0%);
+    padding: 10px;
+    width: 120px;
+}
+
+.navbar-submenu li a {
+    color: #254F8B;
+}
+
+.navbar-submenu li:hover {
+    background-color: #014085;
+    border-radius: 15px;
+}
+
+.navbar-submenu li:hover .sub_link {
+    color: white;
+}
+
+.navbar-dropdown:hover .navbar-submenu {
+    display: block;
+}
+
+.navbar-dropdown:hover .fa-circle-chevron-down,
+.navbar-showing:hover .fa-film,
+.navbar-contact:hover .fa-envelope,
+.navbar-log:hover .fa-right-to-bracket {
+    color: #1F4B78;
+}
+
+.navbar-submenu_line {
+    width: 0;
+    height: 1px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 4;
+}
+
+.navbar-submenu li:hover .navbar-submenu_line {
+    position: absolute;
+    width: 100%;
+    transition: 1.0s;
+}
+
+/* section 1 on the page.......................................................... */
+.section1 {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/istockphoto-1172430598-612x612.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.section1-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0, 0.7);
+}
+
+.section1-content {
+    width: 70%;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.section1-title {
+    color: white;
+    font-size: 65px;
+    text-transform: uppercase;
+}
+
+.section1-p {
+    color: #2B68B8;
+    margin: 20px 0px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.section1-content button {
+    width: 130px;
+    padding: 15px 0px;
+    font-size: 18px;
+    border: 0;
+    border-radius: 15px;
+    text-transform: capitalize;
+    cursor: pointer;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.secton1-btn2 {
+    background-color: #0F2851;
+    color: white;
+}
+
+.section1-content button:hover {
+    opacity: 0.5;
+}
+
+/* section 2 on the page.......................................................... */
+.section2 {
+    width: 100%;
+    height: 100vh;
+    background-color: #e7e4e4;
+}
+
+.section2-title1 {
+    text-align: center;
+    font-size: 45px;
+    text-transform: capitalize;
+    padding-top: 4%;
+}
+
+.section-line {
+    width: 90px;
+    height: 7px;
+    border: 2px solid #0C2B4E;
+    margin: auto;
+    margin-top: -5px;
+    margin-top: 1%;
+}
+
+.section-line:hover,
+.section5-line:hover {
+    background-color: #0C2B4E;
+}
+
+.section2-container {
+    width: 85%;
+    margin: auto;
+    margin-top: 5%;
+}
+
+.section2-box {
+    float: left;
+    width: 28%;
+    text-align: center;
+    padding: 20px 14px;
+    border: 2px solid #0C2B4E;
+    border-radius: 10px;
+    position: relative;
+
+}
+
+.setion2-box_space {
+    margin: 0 8%;
+}
+
+.section2-container i,
+.section2_title,
+.section2-p,
+.section2-box a {
+    position: relative;
+    z-index: 2;
+    transition: 0.5s;
+}
+
+.section2-container i,
+.section2_title {
+    font-size: 25px;
+    text-transform: capitalize;
+}
+
+.section2-p {
+    font-size: 15px;
+    text-transform: capitalize;
+    color: #2D3645;
+    font-weight: bold;
+    height: 30%;
+}
+
+.section2-box a {
+    display: block;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: #254F8B;
+}
+
+.section2-container i,
+.section2_title,
+.section2-p {
+    margin-bottom: 8%;
+}
+
+.section2-box::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: #234C6A;
+    opacity: 0.7;
+    z-index: 1;
+}
+
+.box1::after {
+    background-image: url(../images/movie1_1.png);
+    background-size: 100% 130%;
+    background-repeat: no-repeat;
+}
+
+.box2::after {
+    background-image: url(../images/movie2.jpg);
+    background-size: 100% 130%;
+    background-repeat: no-repeat;
+}
+
+.box3::after {
+    background-image: url(../images/movie3.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.section2-box:hover::after {
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+.section2-box:hover .section2_title,
+.section2-box:hover i {
+    color: #254F8B;
+    transition: 0.5s;
+}
+
+.section2-box:hover .section2_title {
+    border: 2px solid white;
+    border-top: 0;
+    border-radius: 10px;
+    transition: 0.2s;
+}
+
+.section2-box:hover .section2-p {
+    color: #161416;
+    transition: 0.5s;
+}
+
+/* section 3 on the page.......................................................... */
+.section3 {
+    width: 100%;
+    height: 100vh;
+    background-color: #234c6ae3;
+}
+
+.section3-title {
+    text-align: center;
+    font-size: 40px;
+    text-transform: capitalize;
+    padding-top: 3%;
+    color: #ffffff;
+}
+
+.section-line2 {
+    width: 90px;
+    height: 7px;
+    border: 2px solid #ffffff;
+    margin: auto;
+    margin-top: -5px;
+    margin-top: 1%;
+}
+
+.section-line2:hover {
+    background-color: #ffffff;
+}
+
+.section3-container,
+.section3-container2 {
+    width: 70%;
+    margin: auto;
+    margin-top: 3%;
+}
+
+.section3-box {
+    float: left;
+    width: 30%;
+    height: 200px;
+    text-align: center;
+    position: relative;
+}
+
+.section3-container2 .section3-box {
+    margin-top: 3%;
+}
+
+.setion3-box_space {
+    margin: 0 5%;
+}
+
+.section3-box img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.section3-box-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.section3-box:hover .section3-box-overlay {
+    visibility: visible;
+    opacity: 1;
+}
+
+.section3-box-overlay .section3-title2 {
+    color: #A64920;
+    font-size: 25px;
+    margin-left: auto;
+    text-transform: uppercase;
+    margin-top: 10%;
+}
+
+.section3-box-overlay .section3-p {
+    color: white;
+    font-size: 15px;
+    margin-top: 8%;
+}
+
+.section3-box-overlay button {
+    width: 15%;
+    height: 15%;
+    border-radius: 5px;
+    border: none;
+    background-color: white;
+    margin-top: 10%;
+    font-size: 18px;
+    color: grey;
+    cursor: pointer;
+    padding: 0;
+}
+
+.section3-btn1 .fa-solid,
+.section3-btn2 .fa-ticket {
+    display: none;
+}
+
+.section3-btn1:hover .fa-solid,
+.section3-btn2:hover .fa-ticket {
+    display: inline-block;
+}
+
+.section3-btn1:hover .fa-regular,
+.section3-btn2:hover .fa-film {
+    display: none;
+}
+
+/* section 4 on the page.......................................................... */
+.section4 {
+    width: 100%;
+    height: 100vh;
+}
+
+.section4-title {
+    text-align: center;
+    font-size: 40px;
+    text-transform: capitalize;
+    padding-top: 5%;
+}
+
+.section4-container,
+.section4-container2 {
+    width: 80%;
+    margin: auto;
+    margin-top: 2%;
+}
+
+.section4-box {
+    float: left;
+    width: 28%;
+    text-align: left;
+    padding: 20px 14px;
+    border: 2px solid #0C2B4E;
+    border-radius: 10px;
+    position: relative;
+    height: 200px;
+}
+
+.section4-box-space {
+    margin: 0 7%;
+}
+
+.section4-container2 .section4-box {
+    margin-top: 5%;
+}
+
+.section4-box_icon,
+.section4-box_text {
+    float: left;
+    margin-top: 5%;
+}
+
+.section4-box_icon {
+    position: absolute;
+    z-index: 2;
+    width: 20%;
+}
+
+.section4-box_text {
+    position: absolute;
+    width: 80%;
+    margin-left: 15%;
+}
+
+.section4-p {
+    color: grey;
+    font-size: 16px;
+    margin-top: 10%;
+    text-transform: capitalize;
+    padding-right: 10px;
+    font-weight: bold;
+}
+
+.section4_title1,
+.section4-p {
+    position: relative;
+    z-index: 2;
+    transition: 0.5s;
+}
+
+.section4-container i,
+.section4-container2 i,
+.section4_title1 {
+    font-size: 26px;
+    text-transform: capitalize;
+    padding-right: 5px;
+}
+
+.section4-box::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    top: 50%;
+    left: 50%;
+    background-color: #234C6A;
+    opacity: 0.7;
+    z-index: 1;
+    margin-left: 0;
+    margin-top: 0;
+}
+
+.section4-box:hover::after {
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    transition: 0.5s;
+    margin-left: -50%;
+    margin-top: -33%;
+}
+
+.section4-box:hover .section4_title1,
+.section4-box:hover i {
+    color: white;
+    transition: 0.5s;
+}
+
+.section4-box:hover .section4-p {
+    color: #161416;
+    transition: 0.5s
+}
+
+/* section 5 on the page.......................................................... */
+.section5 {
+    clear: both;
+    width: 100%;
+    height: 100vh;
+    padding-top: 4%;
+}
+
+.section5-container {
+    width: 80%;
+    margin: auto;
+    padding-top: 5%;
+}
+
+.section5-leftside {
+    float: left;
+    height: 100%;
+    width: 50%;
+}
+
+.section5-rightside {
+    float: left;
+    height: 100%;
+    width: 50%;
+}
+
+.section5-leftside h2 {
+    font-size: 40px;
+    text-transform: capitalize;
+    margin-top: 3%;
+}
+
+.section5-line {
+    width: 80px;
+    height: 7px;
+    border: 2px solid #0C2B4E;
+    margin-top: -5px;
+    margin-top: 1%;
+}
+
+.section5-p {
+    margin-bottom: 8%;
+    margin-top: 5%;
+    color: gray;
+    font-weight: bold;
+}
+
+.icon-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+    margin-left: 0;
+}
+
+.icon-list li {
+    padding-left: 30px;
+    position: relative;
+    margin-bottom: 15px;
+    color: gray;
+    margin-bottom: 5%;
+    font-weight: bold;
+}
+
+.icon-true {
+    position: absolute;
+    left: 0;
+    top: 3px;
+    color: #0C2B4E;
+    font-size: 18px;
+}
+
+.section5-rightside img {
+    width: 60%;
+    height: 75%;
+    display: block;
+    margin-left: 40%;
+}
+
+.section5-indicators {
+    width: 20%;
+    height: 10%;
+    margin-left: 60%;
+    margin-top: 2%;
+}
+
+.section5-dotted {
+    float: left;
+    width: 15px;
+    height: 15px;
+    border-radius: 7.5px;
+    background-color: grey;
+}
+
+.dotted-space {
+    margin: 0% 20%;
+}
+
+.section5-dotted:hover {
+    background-color: #0C2B4E;
+}
+
+/* section 6 on the page.......................................................... */
+.section6 {
+    width: 100%;
+    height: 65vh;
+    background-image: url(../images/istockphoto-2244102402-612x612.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.section8-overlay,
+.section6-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0, 0.5);
+}
+
+.section6-container {
+    width: 80%;
+    margin: auto;
+    height: 40%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.section6-box {
+    display: inline-block;
+    width: 20%;
+    font-size: 16px;
+    text-align: center;
+    color: rgb(253, 244, 244);
+    margin-top: 3%;
+}
+
+.section6-space {
+    margin-right: 6%;
+}
+
+.section6-box i {
+    font-size: 40px;
+    color: #0C2B4E;
+}
+
+.section6-box:hover>* {
+    color: white;
+}
+
+.section6-box p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* section 7 on the page.......................................................... */
+.section7 {
+    width: 100%;
+    height: 100vh;
+}
+
+.section7-title {
+    text-align: center;
+    font-size: 45px;
+    text-transform: capitalize;
+    padding-top: 8%;
+}
+
+.section7-container {
+    width: 80%;
+    margin: auto;
+    height: 40%;
+    padding-left: 4%;
+}
+
+.section7-box {
+    float: left;
+    width: 28%;
+    text-align: center;
+    border: 2px solid #0C2B4E;
+    border-radius: 10px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-20%);
+    padding: 3% 0;
+}
+
+.section7-round {
+    width: 90px;
+    height: 90px;
+    border-radius: 45px;
+    border: 2px solid #0C2B4E;
+    padding: 10px;
+    margin: auto;
+    position: relative;
+}
+
+.section7-round h3 {
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.section7-btn {
+    width: 60%;
+    font-size: 14px;
+    border: 2px solid #254f8bbb;
+    border-radius: 10px;
+    padding: 5px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.section7-box>* {
+    margin-top: 6%;
+}
+
+.section7-space {
+    margin: 0 5%;
+}
+
+.section7-box>*,
+.section7-round>* {
+    position: relative;
+    z-index: 2;
+    transition: 0.5s;
+}
+
+.section7-box::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: #234C6A;
+    opacity: 0.7;
+    z-index: 1;
+    transition: 0.4s;
+}
+
+.section7-box:hover::after {
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    transition: 0.6s;
+}
+
+.section7-p1 {
+    text-transform: capitalize;
+    font-size: 25px;
+}
+
+.section7-box:hover .section7-p1 {
+    color: #234C6A;
+    font-weight: bold;
+    transition: 0.1s;
+}
+
+.section7-box:hover .section7-round {
+    border: 3px solid #234C6A;
+    transition: 0.1s;
+}
+
+/* section 8 on the page.......................................................... */
+.section8 {
+    width: 100%;
+    height: 65vh;
+    background-image: url(../images/lego-2539844_1280.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: 4%;
+    position: relative;
+}
+
+.section8-container {
+    width: 65%;
+    margin: auto;
+    height: 40%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.section8-box1,
+.section8-box2 {
+    float: left;
+    width: 48%;
+}
+
+.section8-box2 {
+    margin-left: 4%;
+}
+
+.section8-box-line1 {
+    width: 90%;
+    margin-bottom: 20px;
+}
+
+.line-space {
+    margin-left: 10%;
+}
+
+.section8-box-left {
+    display: inline-block;
+    vertical-align: middle;
+    width: 90px;
+    height: 90px;
+    border-radius: 45px;
+}
+
+.section8-img1 {
+    background-image: url(../images/ai-generated-9567007_1280.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.section8-img2 {
+    background-image: url(../images/ai-generated-9567003_1280.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.section8-box-right {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 20px;
+    text-transform: capitalize;
+}
+
+.section8-box-line2 {
+    display: block;
+    width: 90%;
+    font-size: 16px;
+}
+
+.section8-title {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    line-height: 1.5;
+}
+
+.section8-p1 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #00163B;
+}
+
+.section8-p2 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* section 9 on the page.......................................................... */
+.section9 {
+    width: 100%;
+    height: 100vh;
+    padding-top: 8%;
+}
+
+.section9-title {
+    text-align: center;
+    font-size: 45px;
+    text-transform: capitalize;
+}
+
+.section9-container {
+    width: 80%;
+    margin: auto;
+    margin-top: 4%;
+}
+
+.section9-box {
+    float: left;
+    width: 30%;
+    background-color: #BCC2C8;
+    text-align: center;
+    padding: 18px 14px;
+    position: relative;
+    border-radius: 10px;
+}
+
+.section9-img {
+    width: 80%;
+    margin: auto;
+    position: relative;
+}
+
+.section9-img img {
+    width: 100%;
+    background-color: #a3a8b1;
+}
+
+.section9-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    visibility: hidden;
+    opacity: 0;
+    transition: 2s;
+    z-index: 2;
+}
+
+.section9-box:hover .section9-overlay {
+    visibility: visible;
+    opacity: 1;
+}
+
+.section9-overlay i {
+    width: 40px;
+    height: 40px;
+    background-color: #254f8b6e;
+    color: white;
+    font-size: 20px;
+}
+
+.section9-overlay a i {
+    line-height: 40px;
+}
+
+.section9-overlay .fa-facebook {
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 0 0 20px 0;
+}
+
+.section9-overlay .fa-x-twitter {
+    position: absolute;
+    left: 83%;
+    top: 0;
+    border-radius: 0 0 0 20px;
+}
+
+.section9-overlay .fa-instagram {
+    position: absolute;
+    left: 42%;
+    top: 80%;
+    border-radius: 20px 20px 0 0;
+    font-size: 25px;
+}
+
+.section9-title2 {
+    font-size: 25px;
+    text-transform: capitalize;
+    margin: 5% 0;
+    color: #00163B;
+}
+
+.section9-p {
+    text-transform: capitalize;
+    color: #3C5B6F;
+}
+
+.section9-box:hover .section9-title2 {
+    color: #3C5B6F;
+}
+
+.section9-box:hover .section9-p {
+    color: #00163B;
+    font-weight: bold;
+}
+
+.section9-box::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #234C6A;
+    opacity: 0.7;
+    transition: 0.4s;
+    z-index: 1;
+    border-radius: 10px;
+}
+
+.section9-box:hover::after {
+    width: 100%;
+    height: 100%;
+    transition: 0.6s;
+    opacity: 0.4;
+}
+
+.section9-space {
+    margin: 0px 5%;
+}
+
+/* section 10 on the page.......................................................... */
+.section10 {
+    width: 100%;
+    height: 100vh;
+    margin-bottom: 8%;
+}
+
+.section10-title {
+    text-align: center;
+    font-size: 35px;
+    text-transform: capitalize;
+    margin-top: 4%;
+}
+
+.section10-container {
+    padding-top: 2%;
+    width: 80%;
+    margin: auto;
+}
+
+.section10-box {
+    float: left;
+    width: 30%;
+    text-align: center;
+    border: 2px solid #0C2B4E;
+    border-radius: 10px;
+    position: relative;
+    padding: 3% 0;
+}
+
+.section10-img img {
+    border-radius: 10px;
+    border: 2px solid #0C2B4E;
+}
+
+.section10-img-bottom {
+    margin-top: 15px;
+    position: relative;
+}
+
+.section10-img-bottom i {
+    color: #00163B;
+}
+
+.section10-img-bottom span {
+    text-transform: capitalize;
+}
+
+.span-space {
+    position: absolute;
+    left: 46%;
+    z-index: 2;
+}
+
+.span-left {
+    position: absolute;
+    left: 5%;
+}
+
+.section10-text {
+    margin-top: 20%;
+    padding: 0 5px;
+}
+
+.section10-title2 {
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.section10-text>* {
+    position: relative;
+    z-index: 2;
+    transition: 0.5s;
+    margin-top: 6%;
+}
+
+.section10-box::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: #234C6A;
+    opacity: 0.7;
+    z-index: 1;
+    transition: 0.4s;
+}
+
+.section10-box:hover::after {
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    transition: 0.6s;
+}
+
+.section10-box:hover .section10-title2 {
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.section10-p {
+    color: grey;
+}
+
+.section10-box:hover .section10-p {
+    color: #00163B;
+    transition: 0.5s;
+}
+
+.section10-text a {
+    font-size: 15px;
+    font-weight: bold;
+    color: #00163B;
+    text-decoration: none;
+    display: inline-block;
+    text-transform: capitalize;
+}
+
+.section10-box:hover .section10-text a {
+    color: #ffffff;
+}
+
+.section10-space {
+    margin: 0 5%;
+}
+
+/* section 11 on the page.......................................................... */
+.section11 {
+    width: 100%;
+    height: 55vh;
+    background-color: #234c6af6;
+}
+
+.section11-container {
+    padding-top: 2%;
+    width: 40%;
+    margin: auto;
+    height: 100%;
+    text-align: center;
+}
+
+.section11-img {
+    background-image: url(../images/footer2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 45%;
+    height: 65%;
+    border-radius: 10px;
+    margin: auto;
+}
+
+.section11-icons {
+    margin-top: 3%;
+    margin-bottom: 1%;
+}
+
+.section11-icons i {
+    width: 55px;
+    height: 55px;
+    border-radius: 27.5px;
+    background-color: #00163B;
+    color: white;
+    font-size: 30px;
+    opacity: 0.7;
+}
+
+.section11-icons a i {
+    line-height: 55px;
+}
+
+.section11-container p {
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+}
+
+.section11-icons i:hover {
+    opacity: 1;
+}
