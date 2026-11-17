@@ -532,6 +532,7 @@ body {
     border-radius: 10px;
     position: relative;
     height: 200px;
+    overflow: hidden; 
 }
 
 .section4-box-space {
@@ -585,17 +586,17 @@ body {
 }
 
 .section4-box::after {
-    position: absolute;
+   position: absolute;
     content: "";
     width: 0;
     height: 0;
     top: 50%;
     left: 50%;
+    transform: translate(-50%, -50%); 
     background-color: #234C6A;
-    opacity: 0.7;
+    opacity: 0;
     z-index: 1;
-    margin-left: 0;
-    margin-top: 0;
+    transition: 0.5s; 
 }
 
 .section4-box:hover::after {
@@ -603,8 +604,6 @@ body {
     height: 100%;
     opacity: 0.4;
     transition: 0.5s;
-    margin-left: -50%;
-    margin-top: -28%;
 }
 
 .section4-box:hover .section4_title1,
